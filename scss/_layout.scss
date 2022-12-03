@@ -72,6 +72,7 @@
 
 /* ------------------------------ contact page ------------------------------ */
 #contact {
+  // flex-direction: column;
   @include full-background-image("/images/marble-background.jpg");
   padding-top: 48px;
   padding-bottom: 48px;
@@ -274,7 +275,7 @@
         }
 
         .footer-social__list__link {
-          background-color: $light;
+          background-color: transparent;
           color: $body;
           text-decoration: none;
 

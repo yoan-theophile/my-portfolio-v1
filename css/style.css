@@ -386,7 +386,7 @@ img {
   display: inline;
 }
 .footer-social .footer-social__list .footer-social__list__link {
-  background-color: #f7f7f7;
+  background-color: transparent;
   color: #000324;
   text-decoration: none;
 }
