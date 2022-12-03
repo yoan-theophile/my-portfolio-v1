@@ -117,21 +117,48 @@ img {
   align-items: center;
   flex-wrap: nowrap;
 }
-@media screen and (max-width: 768px) {
-  #home .section,
-  #about .section,
-  #services .section,
-  #contact .section {
-    flex-wrap: wrap;
-  }
+#home .section .section__text,
+#about .section .section__text,
+#services .section .section__text,
+#contact .section .section__text {
+  text-align: left;
+  font-size: 24px;
+  line-height: 48px;
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+#home .section .section__img,
+#about .section .section__img,
+#services .section .section__img,
+#contact .section .section__img {
+  max-width: 50%;
 }
 @media screen and (max-width: 768px) {
   #home .section,
   #about .section,
   #services .section,
   #contact .section {
+    flex-wrap: wrap;
     height: auto;
     padding: 80px 0 60px 0;
+  }
+  #home .section .section,
+  #about .section .section,
+  #services .section .section,
+  #contact .section .section {
+    flex-wrap: wrap;
+  }
+  #home .section .section__text,
+  #about .section .section__text,
+  #services .section .section__text,
+  #contact .section .section__text {
+    text-align: center;
+  }
+  #home .section .section__img,
+  #about .section .section__img,
+  #services .section .section__img,
+  #contact .section .section__img {
+    width: 100%;
   }
 }
 
@@ -143,56 +170,19 @@ img {
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
-#home .home__text {
-  text-align: left;
-  font-size: 24px;
-  line-height: 48px;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-#home .home__img {
-  max-width: 50%;
-}
 @media screen and (max-width: 768px) {
   #home .section {
     flex-wrap: wrap-reverse;
-  }
-  #home .home__text {
-    text-align: center;
-  }
-  #home .home__img {
-    width: 100%;
   }
 }
 
-/* -------------------------------- general page ------------------------------- */
-#home {
-  background-image: url("/images/marble-background.jpg");
-  background-position: center center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
+/* -------------------------------- about page ------------------------------- */
+#about {
+  background-color: white;
 }
-#home .home__text {
-  text-align: left;
-  font-size: 24px;
-  line-height: 48px;
-  font-weight: 500;
-  letter-spacing: 2px;
-}
-#home .home__img {
-  max-width: 50%;
-}
-@media screen and (max-width: 768px) {
-  #home .section {
-    flex-wrap: wrap-reverse;
-  }
-  #home .home__text {
-    text-align: center;
-  }
-  #home .home__img {
-    width: 100%;
-  }
+#about .section__text {
+  font-weight: 400;
+  letter-spacing: 1px;
 }
 
 /* ------------------------------ contact page ------------------------------ */

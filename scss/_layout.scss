@@ -19,11 +19,30 @@
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    @include tablet {
-      flex-wrap: wrap;
+
+    .section__text {
+      text-align: left;
+      font-size: 24px;
+      line-height: 48px;
+      font-weight: $font-weight-semibold;
+      letter-spacing: 2px;
     }
-  
+
+    .section__img {
+      max-width: 50%;
+    }
+
     @include tablet {
+      .section {
+        flex-wrap: wrap;
+      }
+      .section__text {
+        text-align: center;
+      }
+      .section__img {
+        width: 100%;
+      }
+      flex-wrap: wrap;
       height: auto;
       padding: 80px 0 60px 0;
     }
@@ -33,56 +52,20 @@
 /* -------------------------------- home page ------------------------------- */
 #home {
   @include full-background-image("/images/marble-background.jpg");
-  .home__text {
-    text-align: left;
-    font-size: 24px;
-    line-height: 48px;
-    font-weight: $font-weight-semibold;
-    letter-spacing: 2px;
-  }
-
-  .home__img {
-    max-width: 50%;
-  }
 
   @include tablet {
     .section {
       flex-wrap: wrap-reverse;
-    }
-    .home__text {
-      text-align: center;
-    }
-    .home__img {
-      width: 100%;
     }
   }
 }
 
-/* -------------------------------- general page ------------------------------- */
-#home {
-  @include full-background-image("/images/marble-background.jpg");
-  .home__text {
-    text-align: left;
-    font-size: 24px;
-    line-height: 48px;
-    font-weight: $font-weight-semibold;
-    letter-spacing: 2px;
-  }
-
-  .home__img {
-    max-width: 50%;
-  }
-
-  @include tablet {
-    .section {
-      flex-wrap: wrap-reverse;
-    }
-    .home__text {
-      text-align: center;
-    }
-    .home__img {
-      width: 100%;
-    }
+/* -------------------------------- about page ------------------------------- */
+#about {
+  background-color: $white;
+  .section__text {
+    font-weight: $font-weight-reg;
+    letter-spacing: 1px;
   }
 }
 
@@ -90,8 +73,10 @@
 #contact {
   padding-top: 48px;
   padding-bottom: 48px;
+  // p {
+  //   @include set-font-size(1.5);
+  // }
 }
-
 
 /* ----------------------------- MAIN NAVIGATION ---------------------------- */
 
@@ -200,9 +185,6 @@
       width: 100%;
       backdrop-filter: invert(8%);
       background-color: transparent;
-      // background-color: opacify($color: $white, $amount: 0.1);
-      // background-color: $light;
-      // backdrop-filter: blur(90%);
       height: 0px;
       transition: all 0.3s ease-in;
       overflow-y: hidden;
