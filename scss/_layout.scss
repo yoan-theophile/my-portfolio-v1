@@ -52,7 +52,7 @@
 
 /* -------------------------------- home page ------------------------------- */
 #home {
-  @include full-background-image("/images/marble-background.jpg");
+  @include full-background-image("/images/marble-background.png");
 
   @include tablet {
     .section {
@@ -73,7 +73,7 @@
 /* ------------------------------ contact page ------------------------------ */
 #contact {
   // flex-direction: column;
-  @include full-background-image("/images/marble-background.jpg");
+  @include full-background-image("/images/marble-background.png");
   padding-top: 48px;
   padding-bottom: 48px;
   .section {
