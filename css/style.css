@@ -236,10 +236,10 @@ img {
   height: 100%;
   background: inherit;
   z-index: -1;
-  filter: blur(8px);
-  -moz-filter: blur(8px);
-  -webkit-filter: blur(8px);
-  -o-filter: blur(8px);
+  filter: blur(3px);
+  -moz-filter: blur(3px);
+  -webkit-filter: blur(3px);
+  -o-filter: blur(3px);
   transition: all 2s linear;
   -moz-transition: all 2s linear;
   -webkit-transition: all 2s linear;
