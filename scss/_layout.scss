@@ -7,6 +7,151 @@
   margin: 0 auto;
 }
 
+/* -------------------------------- homepage -------------------------------- */
+#home,
+#about,
+#services,
+#contact {
+  @include full-background-image("/images/marble-background.jpg");
+  height: 100vh;
+}
+
+#home {
+  padding-top: $padding * 2.5;
+}
+
+/* ----------------------------- MAIN NAVIGATION ---------------------------- */
+
+.navbar {
+  position: fixed;
+  padding-left: 8px;
+  padding-right: 8px;
+  left: 0;
+  right: 0%;
+  top: 0;
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+  & > &-header {
+    display: inline;
+  }
+  & > &-header > &-title {
+    display: inline-block;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: $font-weight-semibold;
+    color: $body;
+    padding: 10px 10px 10px 10px;
+  }
+
+  & > &-btn {
+    display: none;
+  }
+
+  & > &-links {
+    display: inline-flex;
+    float: right;
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: $font-weight-reg;
+  }
+
+  & > &-links > a {
+    display: inline-block;
+    padding: 13px 10px 13px 10px;
+    text-decoration: none;
+    color: $body;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  & > &-links > a.active::before {
+    content: " ";
+    display: block;
+    height: 90%;
+    width: 100%;
+    margin-left: -3px;
+    margin-right: -3px;
+    position: absolute;
+    background: fade-out($color: $blue, $amount: 0.5);
+    transform: rotate(2deg);
+    top: -1px;
+    left: -1px;
+    border-radius: 25% 30% 25% 29%;
+    padding: 7px 0px 2px 7px;
+  }
+
+  & > &-links > a:hover {
+    color: fade-out($color: $blue, $amount: 0.1);
+  }
+
+  & > #nav-check {
+    display: none;
+  }
+
+  @include tablet {
+    & > &-btn {
+      display: inline-block;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+    }
+    & > &-btn > label {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      padding: 13px;
+    }
+
+    & > &-btn > label {
+      cursor: pointer;
+    }
+
+    & > &-btn > label:hover,
+    & #nav-check:checked ~ &-btn > label {
+      background-color: $white;
+    }
+    & > &-btn > label > span {
+      display: block;
+      width: 25px;
+      height: 10px;
+      border-top: 2px solid $body;
+    }
+    & > &-links {
+      position: absolute;
+      display: block;
+      width: 100%;
+      backdrop-filter: invert(8%);
+      background-color: transparent;
+      // background-color: opacify($color: $white, $amount: 0.1);
+      // background-color: $light;
+      // backdrop-filter: blur(90%);
+      height: 0px;
+      transition: all 0.3s ease-in;
+      overflow-y: hidden;
+      top: 50px;
+      left: 0px;
+    }
+    & > &-links > a {
+      display: block;
+      width: 100%;
+      @include set-font-size(2);
+    }
+    & > #nav-check:not(:checked) ~ &-links {
+      height: 0px;
+    }
+    & > #nav-check:checked ~ &-links {
+      height: calc(100vh - 50px);
+      overflow-y: auto;
+    }
+  }
+}
+
 /* --------------------------- social media layout -------------------------- */
 
 .footer-social {
@@ -35,7 +180,7 @@
           background-color: $light;
           color: $body;
           text-decoration: none;
-          
+
           & {
             .fa-facebook {
               padding: 10px 14px;

@@ -57,7 +57,7 @@ a {
   text-decoration: none;
   color: $blue;
   text-align: center;
-  font-weight: $font-weight-bold;
+  font-weight: $font-weight-semibold;
   @include transition("color");
   &:visited {
     color: darken($blue, 15%);
@@ -79,4 +79,11 @@ li {
 ul {
   padding:0;
   list-style: none;
+}
+
+@media
+(prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
 }

@@ -60,7 +60,7 @@ a {
   text-decoration: none;
   color: #0d6efd;
   text-align: center;
-  font-weight: 600;
+  font-weight: 500;
   transition-property: "color";
   transition-duration: 0.3s;
   transition-timing-function: ease-in-out;
@@ -88,6 +88,11 @@ ul {
   list-style: none;
 }
 
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
 .headline {
   color: white;
   text-shadow: 1px 1px 2px #000324;
@@ -98,6 +103,142 @@ ul {
   max-width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+/* -------------------------------- homepage -------------------------------- */
+#home,
+#about,
+#services,
+#contact {
+  background-image: url("/images/marble-background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100vh;
+}
+
+#home {
+  padding-top: 75px;
+}
+
+/* ----------------------------- MAIN NAVIGATION ---------------------------- */
+.navbar {
+  position: fixed;
+  padding-left: 8px;
+  padding-right: 8px;
+  left: 0;
+  right: 0%;
+  top: 0;
+}
+
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+}
+.nav > .nav-header {
+  display: inline;
+}
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000324;
+  padding: 10px 10px 10px 10px;
+}
+.nav > .nav-btn {
+  display: none;
+}
+.nav > .nav-links {
+  display: inline-flex;
+  float: right;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 400;
+}
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #000324;
+  white-space: nowrap;
+  position: relative;
+}
+.nav > .nav-links > a.active::before {
+  content: " ";
+  display: block;
+  height: 90%;
+  width: 100%;
+  margin-left: -3px;
+  margin-right: -3px;
+  position: absolute;
+  background: rgba(13, 110, 253, 0.5);
+  transform: rotate(2deg);
+  top: -1px;
+  left: -1px;
+  border-radius: 25% 30% 25% 29%;
+  padding: 7px 0px 2px 7px;
+}
+.nav > .nav-links > a:hover {
+  color: rgba(13, 110, 253, 0.9);
+}
+.nav > #nav-check {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label {
+    cursor: pointer;
+  }
+  .nav > .nav-btn > label:hover, .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: white;
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #000324;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    backdrop-filter: invert(8%);
+    background-color: transparent;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+    font-size: 32px;
+    line-height: 58px;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
 
 /* --------------------------- social media layout -------------------------- */
