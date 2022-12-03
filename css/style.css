@@ -93,6 +93,10 @@ img {
   color: #00cc66;
 }
 
+.text-cursive {
+  font-family: "Pacifico", cursive;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
@@ -103,13 +107,14 @@ img {
 /* -------------------------------- Sections -------------------------------- */
 #home,
 #about,
-#services,
+#achievement,
 #contact {
+  max-width: 100%;
   display: flex;
 }
 #home .section,
 #about .section,
-#services .section,
+#achievement .section,
 #contact .section {
   height: 100vh;
   display: flex;
@@ -119,7 +124,7 @@ img {
 }
 #home .section .section__text,
 #about .section .section__text,
-#services .section .section__text,
+#achievement .section .section__text,
 #contact .section .section__text {
   text-align: left;
   font-size: 24px;
@@ -129,14 +134,14 @@ img {
 }
 #home .section .section__img,
 #about .section .section__img,
-#services .section .section__img,
+#achievement .section .section__img,
 #contact .section .section__img {
   max-width: 50%;
 }
 @media screen and (max-width: 768px) {
   #home .section,
   #about .section,
-  #services .section,
+  #achievement .section,
   #contact .section {
     flex-wrap: wrap;
     height: auto;
@@ -144,19 +149,19 @@ img {
   }
   #home .section .section,
   #about .section .section,
-  #services .section .section,
+  #achievement .section .section,
   #contact .section .section {
     flex-wrap: wrap;
   }
   #home .section .section__text,
   #about .section .section__text,
-  #services .section .section__text,
+  #achievement .section .section__text,
   #contact .section .section__text {
     text-align: center;
   }
   #home .section .section__img,
   #about .section .section__img,
-  #services .section .section__img,
+  #achievement .section .section__img,
   #contact .section .section__img {
     width: 100%;
   }
@@ -187,6 +192,11 @@ img {
 
 /* ------------------------------ contact page ------------------------------ */
 #contact {
+  background-image: url("/images/marble-background.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   padding-top: 48px;
   padding-bottom: 48px;
 }
@@ -203,6 +213,37 @@ img {
   #contact .section {
     height: auto;
   }
+}
+
+#achievement {
+  background-image: url("/images/student-849825_1920.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  z-index: 1;
+}
+#achievement .section p {
+  text-shadow: 2px 2px 0.5px #000324;
+  font-size: 32px;
+  line-height: 58px;
+}
+
+#achievement::before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: inherit;
+  z-index: -1;
+  filter: blur(8px);
+  -moz-filter: blur(8px);
+  -webkit-filter: blur(8px);
+  -o-filter: blur(8px);
+  transition: all 2s linear;
+  -moz-transition: all 2s linear;
+  -webkit-transition: all 2s linear;
+  -o-transition: all 2s linear;
 }
 
 /* ----------------------------- MAIN NAVIGATION ---------------------------- */
