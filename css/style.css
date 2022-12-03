@@ -83,6 +83,11 @@ li {
   list-style: none;
 }
 
+ul {
+  padding: 0;
+  list-style: none;
+}
+
 .headline {
   color: white;
   text-shadow: 1px 1px 2px #000324;
@@ -93,6 +98,98 @@ li {
   max-width: 1200px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+/* --------------------------- social media layout -------------------------- */
+.footer-social {
+  width: 350px;
+  display: block;
+  margin: 0 auto 0 0;
+}
+.footer-social .footer-social__title {
+  font-size: 22px;
+  line-height: 40px;
+}
+.footer-social .footer-social__list {
+  color: white;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+}
+.footer-social .footer-social__list .footer-social__list__item {
+  vertical-align: top;
+  display: inline;
+}
+.footer-social .footer-social__list .footer-social__list__link {
+  background-color: #f7f7f7;
+  color: #000324;
+  text-decoration: none;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-facebook {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-facebook:hover {
+  background-color: #3d5b99;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-twitter {
+  padding: 10px 12px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-twitter:hover {
+  background-color: #00aced;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-rss {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-rss:hover {
+  background-color: #eb8231;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-youtube {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-youtube:hover {
+  background-color: #e64a41;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-linkedin {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-linkedin:hover {
+  background-color: #0073a4;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-github {
+  padding: 10px 14px;
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+.footer-social .footer-social__list .footer-social__list__link .fa-github:hover {
+  background-color: #5a32a3;
 }
 
 /*# sourceMappingURL=style.css.map */
