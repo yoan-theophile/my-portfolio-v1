@@ -169,7 +169,7 @@ img {
 
 /* -------------------------------- home page ------------------------------- */
 #home {
-  background-image: url("/images/marble-background.png");
+  background-image: url("../images/marble-background.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -192,7 +192,7 @@ img {
 
 /* ------------------------------ contact page ------------------------------ */
 #contact {
-  background-image: url("/images/marble-background.png");
+  background-image: url("../images/marble-background.png");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,7 +216,7 @@ img {
 }
 
 #achievement {
-  background-image: url("/images/student-849825_1920.jpg");
+  background-image: url("../images/student-849825_1920.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
