@@ -1,0 +1,34 @@
+// contains our Sass mixins
+
+@mixin full-background-image($image-url) {
+  background-image: url($image-url);
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+@mixin set-font-size($factor) {
+  font-size: round($font-size * $factor);
+  line-height: round($font-size * $line-height * $factor);
+}
+
+@mixin transition($property) {
+  transition-property: $property;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-in-out;
+}
+
+// media queries
+
+@mixin tablet {
+  @media screen and (max-width: $tablet-max-width) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media screen and (max-width: $mobile-max-width) {
+    @content;
+  }
+}

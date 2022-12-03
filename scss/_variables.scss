@@ -1,0 +1,38 @@
+// contains Sass variables that we’ll reuse throughout our project
+
+// colors
+// $color-foreground-default: #000324;
+// $color-background-default: #ffffff;
+// $color-black: $color-foreground-default;
+// $color-white: $color-background-default;
+// $color-dark-gray: #353d48;
+// $color-medium-gray: #abb3be;
+// $color-sass-pink: #c69;
+// $color-var-2: #cccccc;
+
+// $light: #f7f7f7;
+// $dark: #222121;
+// $lime: #00cc66;
+// $orangeRed: #fb4b4e;
+// $blue: #2541b2;
+
+$body: #000324;
+$blue: #0d6efd;
+$light: #f7f7f7;
+
+// typography
+$font-stack: "Raleway", sans-serif;
+$font-size: 16px;
+$font-weight-reg: 400;
+$font-weight-semibold: 500;
+$font-weight-bold: 600;
+$line-height: 1.8;
+
+// spacing
+$margin: 30px;
+$padding: $margin;
+
+// media queries
+$screen-size-medium: 620px;
+$tablet-max-width: 768px;
+$mobile-max-width: 280px;

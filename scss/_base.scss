@@ -1,0 +1,77 @@
+// the default style rules for HTML elements
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  margin: 0px;
+  padding: 0px;
+  font-family: $font-stack;
+  font-weight: $font-weight-reg;
+  @include set-font-size(1);
+  background-color: $light;
+  color: $body;
+}
+
+h1,
+h2 {
+  margin: 0px;
+  font-weight: $font-weight-bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+h1 {
+  @include set-font-size(1.8);
+}
+
+h2 {
+  @include set-font-size(1.5);
+  // color: $color-sass-pink;
+}
+
+p {
+  margin: ($margin / 2) auto ($margin / 2) auto;
+}
+
+@media screen and (min-width: $screen-size-medium) {
+  h1 {
+    @include set-font-size(2.5);
+  }
+  h2 {
+    @include set-font-size(2);
+  }
+  p {
+    @include set-font-size(1.2);
+  }
+}
+
+a {
+  display: block;
+  width: 100%;
+  text-decoration: none;
+  color: $blue;
+  text-align: center;
+  font-weight: $font-weight-bold;
+  @include transition("color");
+  &:visited {
+    color: darken($blue, 15%);
+  }
+  &:hover,
+  &:active {
+    color: lighten($blue, 15%);
+    @include transition("color");
+  }
+}
+strong {
+  font-weight: $font-weight-bold;
+}
+
+li {
+  list-style: none;
+}
