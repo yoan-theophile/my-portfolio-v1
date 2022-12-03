@@ -30,6 +30,7 @@
   }
 }
 
+/* -------------------------------- home page ------------------------------- */
 #home {
   @include full-background-image("/images/marble-background.jpg");
   .home__text {
@@ -56,6 +57,36 @@
     }
   }
 }
+
+/* -------------------------------- general page ------------------------------- */
+#home {
+  @include full-background-image("/images/marble-background.jpg");
+  .home__text {
+    text-align: left;
+    font-size: 24px;
+    line-height: 48px;
+    font-weight: $font-weight-semibold;
+    letter-spacing: 2px;
+  }
+
+  .home__img {
+    max-width: 50%;
+  }
+
+  @include tablet {
+    .section {
+      flex-wrap: wrap-reverse;
+    }
+    .home__text {
+      text-align: center;
+    }
+    .home__img {
+      width: 100%;
+    }
+  }
+}
+
+
 
 /* ----------------------------- MAIN NAVIGATION ---------------------------- */
 
