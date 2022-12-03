@@ -190,6 +190,20 @@ img {
   padding-top: 48px;
   padding-bottom: 48px;
 }
+#contact .section {
+  justify-content: flex-start;
+  height: 75vh;
+}
+#contact p {
+  font-size: 24px;
+  line-height: 43px;
+  margin-bottom: 24px;
+}
+@media screen and (max-width: 768px) {
+  #contact .section {
+    height: auto;
+  }
+}
 
 /* ----------------------------- MAIN NAVIGATION ---------------------------- */
 .navbar {
@@ -314,7 +328,7 @@ img {
   width: 350px;
   display: block;
   margin: 0 auto 0 0;
-  padding-bottom: 48px;
+  padding-bottom: 80px;
 }
 .footer-social .footer-social__title {
   font-size: 22px;

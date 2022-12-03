@@ -73,9 +73,19 @@
 #contact {
   padding-top: 48px;
   padding-bottom: 48px;
-  // p {
-  //   @include set-font-size(1.5);
-  // }
+  .section {
+    justify-content: flex-start;
+    height: 75vh;
+  }
+  p {
+    @include set-font-size(1.5);
+    margin-bottom: 24px;
+  }
+  @include tablet {
+    .section {
+      height: auto;
+    }
+  }
 }
 
 /* ----------------------------- MAIN NAVIGATION ---------------------------- */
@@ -212,7 +222,7 @@
   width: 350px;
   display: block;
   margin: 0 auto 0 0;
-  padding-bottom: 48px;
+  padding-bottom: 80px;
 
   & {
     .footer-social__title {
