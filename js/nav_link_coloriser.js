@@ -1,6 +1,5 @@
 /**
  * Loop through links to add or remove 'active' class
- * @see https://alvarotrigo.com/blog/sticky-navbar/
  */
 const addOrRemoveActiveClass = () => {
 

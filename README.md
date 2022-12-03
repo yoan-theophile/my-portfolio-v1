@@ -6,7 +6,6 @@
 - [Built With](#built-with)
 - [Features](#features)
 - [Contact](#contact)
-- [Acknowledgements](#acknowledgements)
 
 ## Overview
 
@@ -41,8 +40,3 @@ Some features are presented in this site such as :
 Live in: Cameroun
 Phone number: +237 699679821
 Email: tagnepierre9@gmail.com
-
-## Acknowledgements
-
-- <https://github.com/briancodex/sass-website-v1>
-- <https://gist.github.com/manavm1990/6b4c3f51a1cc7ec2fa6c3309205be0f7>
