@@ -1,0 +1,39 @@
+{
+  "section": {
+    "home": {
+      "text": "<p>Théophile Tagne est un passionné de développement web et étudiant en master dans la filière génie logiciel à l'      <span class='text-success'>          <strong>              Université des Montagnes          </strong>      </span>  </p>",
+      "image": {
+        "src": "images/monitor.svg",
+        "alt": "monitor"
+      }
+    },
+    "about": {
+      "text": "<h1>A propos  </h1>  <p>      Je suis un développeur junior passionné par le développement d'applications web.  </p>  <p>      Pour mes projets, j'utilise Figma, ReactJS, Angular et PHP.  </p>  <p>      Au-delà du codage, le travail d'équipe, la bonne organisation et la proactivité font partie de      mon quotidien.  </p>",
+      "image": {
+        "src": "images/browser_illustrations.webp",
+        "alt": "coding"
+      }
+    },
+    "achievement": {
+      "text": "<h1>Réalisation                    </h1>                    <p>                        Au cours d'un stage académique au sein de l'entreprise                        <a href='https://da-se.com'>DA-SERVICES</a>                        , j'ai contribué au développement de l'application                        <a href='https://allocampusdev.web.app'>                            <span class='text-success text-cursive'>                                <strong>                                    AlloCampus                                </strong>                            </span>.                        </a>                    </p>",
+      "image": {
+        "src": "images/logo allo campus.png",
+        "alt": "allocampus"
+      }
+    }
+  },
+  "contact": {
+    "town": "Cameroun",
+    "city": "Bangangte",
+    "phone_number": "675741063",
+    "email": "tagnepierre9@gmail.com"
+  },
+  "footer-social": {
+    "facebook": "#facebook",
+    "twitter": "#twitter",
+    "rss": "#rss",
+    "youtube": "#youtube",
+    "linkedin": "#linkedin",
+    "github": "https://github.com/yoan-theophile"
+  }
+}

@@ -97,6 +97,30 @@ img {
   font-family: "Pacifico", cursive;
 }
 
+@keyframes backInDown {
+  0% {
+    transform: translateY(-1200px) scale(0.7);
+    opacity: 0.7;
+  }
+  80% {
+    transform: translateY(0) scale(0.7);
+    opacity: 0.7;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.animation-backInDown {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  animation-name: backInDown;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
