@@ -14,14 +14,25 @@ const getContent = async (url) => {
 };
 
 const addSection = (section) => {
-  Object.keys(section).forEach((key) => {
-    const element = document.querySelector(`#${key}`);
-    if (element) {
-      element.querySelector('.section__text').innerHTML = section[key].text
-      element.querySelector('img.section__img').src = section[key].image.src
-      element.querySelector('img.section__img').alt = section[key].image.alt
-    }
-  });
+  const main = document.querySelector('main')
+  if (main) {
+    let html = ''
+    Object.keys(section).forEach((key) => {
+      html += `
+       <section id="${key}">
+          <div class="container">
+              <div class="section">
+                  <div class="section__text animation-fadeInLeft">
+                  ${section[key].text}
+                  </div>
+                  <img class="section__img animation-fadeInRight" src="${section[key].image.src}" alt="${section[key].image.alt}">
+              </div>
+          </div>
+      </section>
+      `
+    });
+    main.innerHTML += html
+  }
 };
 
 const addSocial = (social) => {
