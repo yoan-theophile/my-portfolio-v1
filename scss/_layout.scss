@@ -17,6 +17,7 @@
   .section {
     height: 100vh;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
@@ -27,10 +28,16 @@
       line-height: 48px;
       font-weight: $font-weight-semibold;
       letter-spacing: 2px;
+
+      p {
+        margin-left: 16px;
+        margin-right: 16px;
+      }
     }
 
     .section__img {
       max-width: 50%;
+      max-height: 100%;
     }
 
     @include tablet {
@@ -42,6 +49,7 @@
       }
       .section__img {
         width: 100%;
+        max-width: 100%;
       }
       flex-wrap: wrap;
       height: auto;
@@ -52,8 +60,12 @@
 
 /* -------------------------------- home page ------------------------------- */
 #home {
-  @include full-background-image("../images/marble-background.png");
-
+  @include full-background-image(
+    "../images/gradienta-QWutu2BRpOs-unsplash.jpg"
+  );
+  .section {
+    flex-direction: row-reverse;
+  }
   @include tablet {
     .section {
       flex-wrap: wrap-reverse;
@@ -179,7 +191,7 @@
     margin-left: -3px;
     margin-right: -3px;
     position: absolute;
-    background: fade-out($color: $blue, $amount: 0.5);
+    background: fade-out($color: $orange, $amount: 0.5);
     transform: rotate(2deg);
     top: -1px;
     left: -1px;
@@ -188,7 +200,7 @@
   }
 
   & > &-links > a:hover {
-    color: fade-out($color: $blue, $amount: 0.1);
+    color: fade-out($color: $orange, $amount: 0.1);
   }
 
   & > #nav-check {

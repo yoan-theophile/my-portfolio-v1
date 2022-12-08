@@ -44,16 +44,16 @@ a {
   // display: block;
   width: 100%;
   text-decoration: none;
-  color: $blue;
+  color: $orange;
   text-align: center;
   font-weight: $font-weight-semibold;
   @include transition("color");
   &:visited {
-    color: darken($blue, 15%);
+    color: darken($orange, 15%);
   }
   &:hover,
   &:active {
-    color: lighten($blue, 15%);
+    color: lighten($orange, 15%);
     @include transition("color");
   }
 }
