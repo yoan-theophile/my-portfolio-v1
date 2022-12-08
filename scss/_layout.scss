@@ -97,6 +97,7 @@
     margin-bottom: 24px;
   }
   @include tablet {
+    @include full-background-image("../images/marble-background.jpg");
     .section {
       height: auto;
     }

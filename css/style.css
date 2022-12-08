@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
@@ -79,11 +83,6 @@ img {
   max-width: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  html {
-    scroll-behavior: smooth;
-  }
-}
 .headline {
   color: white;
   text-shadow: 1px 1px 2px #000324;
@@ -331,6 +330,13 @@ img {
   margin-bottom: 24px;
 }
 @media screen and (max-width: 768px) {
+  #contact {
+    background-image: url("../images/marble-background.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
   #contact .section {
     height: auto;
   }
