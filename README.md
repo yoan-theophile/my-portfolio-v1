@@ -37,6 +37,6 @@ Some features are presented in this site such as :
 
 ## Contact
 
-Live in: Cameroun
-Phone number: +237 699679821
-Email: tagnepierre9@gmail.com
+- Live in: Cameroun
+- Phone number: +237 675741063
+- Email: tagnepierre9@gmail.com
