@@ -15,7 +15,7 @@
       }
     },
     "achievement": {
-      "text": "<h1>Réalisation                    </h1>                    <p>                        Au cours d'un stage académique au sein de l'entreprise                        <a href='https://da-se.com'>DA-SERVICES</a>                        , j'ai contribué au développement de l'application                        <a href='https://allocampusdev.web.app'>                            <span class='text-success text-cursive'>                                <strong>                                    AlloCampus                                </strong>                            </span>.                        </a>                    </p>",
+      "text": "<h1>Réalisation                    </h1>                    <p>                        Au cours d'un stage académique au sein de l'entreprise                        <a href='https://da-se.com'>DA-SERVICES</a>                        , j'ai contribué au développement de l'application                        <a href='https://allocampusdev.web.app'>                            <span class='text-cursive'>                                <strong>                                    AlloCampus                                </strong>                            </span>.                        </a>                    </p>",
       "image": {
         "src": "images/logo allo campus.png",
         "alt": "allocampus"
