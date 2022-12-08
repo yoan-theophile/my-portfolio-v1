@@ -46,6 +46,8 @@
       }
       .section__text {
         text-align: center;
+        overflow: scroll hidden ;
+        text-overflow: ellipsis;
       }
       .section__img {
         width: 100%;
@@ -100,6 +102,8 @@
     @include full-background-image("../images/marble-background.jpg");
     .section {
       height: auto;
+      overflow: scroll hidden ;
+      text-overflow: ellipsis;
     }
   }
 }
@@ -266,7 +270,7 @@
 /* --------------------------- social media layout -------------------------- */
 
 .footer-social {
-  width: 350px;
+  // width: 350px;
   display: block;
   margin: 0 auto 0 0;
   padding-bottom: 80px;
@@ -281,6 +285,7 @@
       margin-top: 10px;
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
 
       & {
         .footer-social__list__item {
